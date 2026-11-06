@@ -1,0 +1,490 @@
+{
+ "id": "session",
+ "title": "Student session",
+ "blocks": [
+  {
+   "id": "s",
+   "type": "lf.student-session",
+   "title": "Critical Thinking: Identifying Pros and Cons",
+   "quiz": [
+    {
+     "type": "gap-fill",
+     "questionText": "Pros are reasons _____ doing something.",
+     "options": [
+      "for",
+      "against",
+      "before",
+      "without"
+     ],
+     "correctAnswer": "for",
+     "explanation": "Pros are the reasons for doing something — the positive points.",
+     "explanationArabic": "الـ pros هي الأسباب المؤيدة لفعل شيء ما، أي النقاط الإيجابية.",
+     "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+     "conceptCheck": true,
+     "optionsArabic": [
+      "تؤيد",
+      "تعارض",
+      "تسبق",
+      "من دون"
+     ],
+     "questionTextArabic": "الـ pros هي أسباب _____ القيام بشيء ما."
+    },
+    {
+     "type": "gap-fill",
+     "questionText": "Cons are reasons _____ doing something.",
+     "options": [
+      "against",
+      "for",
+      "after",
+      "about"
+     ],
+     "correctAnswer": "against",
+     "explanation": "Cons are the reasons against doing something — the negative points.",
+     "explanationArabic": "الـ cons هي الأسباب المعارضة لفعل شيء ما، أي النقاط السلبية.",
+     "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+     "conceptCheck": true,
+     "optionsArabic": [
+      "تعارض",
+      "تؤيد",
+      "تأتي بعد",
+      "تتعلق بـ"
+     ],
+     "questionTextArabic": "الـ cons هي أسباب _____ القيام بشيء ما."
+    },
+    {
+     "type": "gap-fill",
+     "questionText": "When you _____ two ideas, it is helpful to list the pros and cons.",
+     "options": [
+      "compare",
+      "forget",
+      "repeat",
+      "translate"
+     ],
+     "correctAnswer": "compare",
+     "explanation": "The strategy is used when you compare — listing pros and cons helps you see both sides.",
+     "explanationArabic": "تُستخدم هذه الاستراتيجية عند المقارنة، فكتابة الـ pros والـ cons تساعدك على رؤية الجانبين.",
+     "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+     "conceptCheck": true,
+     "optionsArabic": [
+      "تقارن",
+      "تنسى",
+      "تكرر",
+      "تترجم"
+     ],
+     "questionTextArabic": "عندما _____ فكرتين، من المفيد أن تكتب قائمة بالـ pros والـ cons."
+    },
+    {
+     "type": "gap-fill",
+     "questionText": "In the chart about travelling abroad, 'It takes too long' is a _____.",
+     "options": [
+      "con",
+      "pro",
+      "title",
+      "question"
+     ],
+     "correctAnswer": "con",
+     "explanation": "'It takes too long' is a reason against travelling abroad, so it belongs in the cons column.",
+     "explanationArabic": "الجملة 'It takes too long' سبب معارض للسفر إلى الخارج، لذلك توضع في عمود الـ cons.",
+     "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+     "conceptCheck": true,
+     "optionsArabic": [
+      "عيب (con)",
+      "ميزة (pro)",
+      "عنوان (title)",
+      "سؤال (question)"
+     ],
+     "questionTextArabic": "في الجدول عن السفر إلى الخارج، العبارة «يستغرق الأمر وقتًا طويلاً» هي _____."
+    },
+    {
+     "type": "gap-fill",
+     "questionText": "In the chart, 'I can discover new ways to do things' is listed as a _____.",
+     "options": [
+      "pro",
+      "con",
+      "problem",
+      "rule"
+     ],
+     "correctAnswer": "pro",
+     "explanation": "Discovering new ways to do things is a reason for travelling abroad, so it is a pro.",
+     "explanationArabic": "اكتشاف طرق جديدة لفعل الأشياء سبب مؤيد للسفر إلى الخارج، لذلك فهو pro.",
+     "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+     "conceptCheck": true,
+     "optionsArabic": [
+      "ميزة (pro)",
+      "عيب (con)",
+      "مشكلة (problem)",
+      "قاعدة (rule)"
+     ],
+     "questionTextArabic": "في الجدول، العبارة «يمكنني اكتشاف طرق جديدة للقيام بالأشياء» مُدرجة على أنها _____."
+    }
+   ],
+   "practice": {
+    "title": "Critical Thinking: Identifying Pros and Cons",
+    "band": "B1",
+    "levels": [
+     {
+      "level": "remember",
+      "label": "Remember",
+      "labelArabic": "تذكّر",
+      "items": [
+       {
+        "bloomLevel": "remember",
+        "explanation": "Pros are reasons for, cons are reasons against, and a chart helps you compare them side by side.",
+        "explanationArabic": "الـ pros هي الأسباب المؤيدة، والـ cons هي الأسباب المعارضة، والجدول (chart) يساعدك على مقارنتها جنباً إلى جنب.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "match",
+        "instructions": "Match each term to its meaning.",
+        "instructionsArabic": "طابق كل مصطلح مع معناه.",
+        "pairs": [
+         {
+          "left": "pros",
+          "right": "reasons for doing something"
+         },
+         {
+          "left": "cons",
+          "right": "reasons against doing something"
+         },
+         {
+          "left": "compare",
+          "right": "look at two things together"
+         },
+         {
+          "left": "chart",
+          "right": "a table with two columns"
+         }
+        ]
+       },
+       {
+        "bloomLevel": "remember",
+        "explanation": "The textbook presents identifying pros and cons as a critical thinking strategy for comparing ideas.",
+        "explanationArabic": "يقدم الكتاب تحديد الـ pros والـ cons كاستراتيجية critical thinking لمقارنة الأفكار.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "Identifying pros and cons is a _____ strategy.",
+        "options": [
+         "critical thinking",
+         "grammar",
+         "pronunciation",
+         "spelling"
+        ],
+        "correctAnswer": "critical thinking",
+        "conceptCheck": true,
+        "optionsArabic": [
+         "التفكير الناقد (critical thinking)",
+         "القواعد (grammar)",
+         "النطق (pronunciation)",
+         "التهجئة (spelling)"
+        ],
+        "questionTextArabic": "تحديد الـ pros والـ cons هو استراتيجية في _____."
+       },
+       {
+        "bloomLevel": "remember",
+        "explanation": "The example topic in the textbook is 'Travel Abroad on Vacation'.",
+        "explanationArabic": "موضوع المثال في الكتاب هو 'Travel Abroad on Vacation'.",
+        "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+        "type": "mcq",
+        "questionText": "The textbook example chart is about travelling abroad on _____.",
+        "options": [
+         "vacation",
+         "business",
+         "foot",
+         "purpose"
+        ],
+        "correctAnswer": "vacation",
+        "conceptCheck": true,
+        "optionsArabic": [
+         "الإجازة",
+         "العمل",
+         "المشي",
+         "غرض"
+        ],
+        "questionTextArabic": "يتناول الجدول النموذجي في الكتاب السفر إلى الخارج من أجل _____."
+       }
+      ]
+     },
+     {
+      "level": "understand",
+      "label": "Understand",
+      "labelArabic": "افهم",
+      "items": [
+       {
+        "bloomLevel": "understand",
+        "explanation": "Driving to work quickly is a benefit, so it is a reason for buying a car — a pro.",
+        "explanationArabic": "الوصول إلى العمل بسرعة فائدة، لذا فهو سبب مؤيد لشراء السيارة، أي pro.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "Buying a car: 'I can drive to work quickly' is a _____.",
+        "options": [
+         "pro",
+         "con",
+         "chart",
+         "topic"
+        ],
+        "correctAnswer": "pro",
+        "conceptCheck": true,
+        "optionsArabic": [
+         "ميزة (pro)",
+         "عيب (con)",
+         "جدول (chart)",
+         "موضوع (topic)"
+        ],
+        "questionTextArabic": "شراء سيارة: العبارة «يمكنني القيادة إلى العمل بسرعة» هي _____."
+       },
+       {
+        "bloomLevel": "understand",
+        "explanation": "This is a problem or disadvantage, so it is a reason against studying online — a con.",
+        "explanationArabic": "هذه مشكلة أو سلبية، لذا فهي سبب معارض للدراسة عبر الإنترنت، أي con.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "Studying online: 'It is hard to ask the teacher questions' is a _____.",
+        "options": [
+         "con",
+         "pro",
+         "rule",
+         "decision"
+        ],
+        "correctAnswer": "con",
+        "conceptCheck": true,
+        "optionsArabic": [
+         "عيب (con)",
+         "ميزة (pro)",
+         "قاعدة (rule)",
+         "قرار (decision)"
+        ],
+        "questionTextArabic": "الدراسة عبر الإنترنت: العبارة «من الصعب طرح الأسئلة على المعلم» هي _____."
+       },
+       {
+        "bloomLevel": "understand",
+        "explanation": "A pros and cons list shows both sides: reasons for and reasons against doing something.",
+        "explanationArabic": "قائمة الـ pros والـ cons تُظهر الجانبين: الأسباب المؤيدة والأسباب المعارضة لفعل شيء ما.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "True or false?",
+        "options": [
+         "False — it shows reasons for and against",
+         "True — pros are the only important part",
+         "True — cons are not included in a chart"
+        ],
+        "correctAnswer": "False — it shows reasons for and against",
+        "conceptCheck": true,
+        "questionTextArabic": "صحيح أم خطأ؟",
+        "example": "Listing pros and cons only shows you the good points of an idea.",
+        "optionsArabic": [
+         "خطأ — فهي تُظهر الأسباب المؤيدة والمعارضة",
+         "صحيح — الـ pros هي الجزء المهم الوحيد",
+         "صحيح — الـ cons لا تُدرج في الجدول"
+        ]
+       }
+      ]
+     },
+     {
+      "level": "apply",
+      "label": "Apply",
+      "labelArabic": "طبّق",
+      "items": [
+       {
+        "bloomLevel": "apply",
+        "explanation": "This sentence gives the textbook's definition of pros: reasons for doing something.",
+        "explanationArabic": "هذه الجملة تعطي تعريف الكتاب للـ pros: الأسباب المؤيدة لفعل شيء ما.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "order",
+        "correctSentence": "Pros are reasons for doing something."
+       },
+       {
+        "bloomLevel": "apply",
+        "explanation": "This sentence gives the textbook's definition of cons: reasons against doing something.",
+        "explanationArabic": "هذه الجملة تعطي تعريف الكتاب للـ cons: الأسباب المعارضة لفعل شيء ما.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "order",
+        "correctSentence": "Cons are reasons against doing something."
+       },
+       {
+        "bloomLevel": "apply",
+        "explanation": "The strategy says it is helpful to list the pros and cons when you compare and decide.",
+        "explanationArabic": "تقول الاستراتيجية إن من المفيد كتابة قائمة بالـ pros والـ cons عند المقارنة واتخاذ القرار.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "Before you decide whether to move to a new city, it helps to _____ the pros and cons.",
+        "options": [
+         "list",
+         "hide",
+         "ignore",
+         "delete"
+        ],
+        "correctAnswer": "list",
+        "conceptCheck": true,
+        "optionsArabic": [
+         "تسرد",
+         "تخفي",
+         "تتجاهل",
+         "تحذف"
+        ],
+        "questionTextArabic": "قبل أن تقرر ما إذا كنت ستنتقل إلى مدينة جديدة، من المفيد أن _____ الـ pros والـ cons."
+       },
+       {
+        "bloomLevel": "apply",
+        "explanation": "Small, noisy rooms are a disadvantage — a reason against living in a dormitory — so this goes in the Cons column.",
+        "explanationArabic": "الغرف الصغيرة والمزعجة سلبية، أي سبب معارض للسكن في السكن الجامعي، لذلك توضع في عمود الـ Cons.",
+        "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+        "type": "mcq",
+        "questionText": "Which sentence belongs in the Cons column?",
+        "options": [
+         "The rooms are small and noisy.",
+         "I can meet new friends easily.",
+         "The dormitory is close to the library."
+        ],
+        "correctAnswer": "The rooms are small and noisy.",
+        "conceptCheck": true,
+        "questionTextArabic": "أي جملة تنتمي إلى عمود الـ Cons؟",
+        "example": "Topic: Living in a university dormitory. Pros: I can walk to my classes. Cons: ?",
+        "optionsArabic": [
+         "The rooms are small and noisy.",
+         "I can meet new friends easily.",
+         "The dormitory is close to the library."
+        ]
+       }
+      ]
+     },
+     {
+      "level": "analyze",
+      "label": "Analyze",
+      "labelArabic": "حلّل",
+      "items": [
+       {
+        "bloomLevel": "analyze",
+        "explanation": "Benefits like money and experience are pros; problems like less study time and tiredness are cons.",
+        "explanationArabic": "الفوائد مثل المال والخبرة هي pros، والمشكلات مثل قلة وقت الدراسة والتعب هي cons.",
+        "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+        "type": "match",
+        "instructions": "Match each reason about working part-time to its column.",
+        "instructionsArabic": "طابق كل سبب عن العمل بدوام جزئي مع عموده.",
+        "pairs": [
+         {
+          "left": "I can earn my own money.",
+          "right": "pro — a benefit"
+         },
+         {
+          "left": "I have less time to study.",
+          "right": "con — a problem"
+         },
+         {
+          "left": "I gain useful experience.",
+          "right": "pro — a reason for"
+         },
+         {
+          "left": "I feel tired in class.",
+          "right": "con — a reason against"
+         }
+        ]
+       },
+       {
+        "bloomLevel": "analyze",
+        "explanation": "'It takes too long' is a reason against travelling, so it belongs in the Cons column, not under Pros.",
+        "explanationArabic": "'It takes too long' سبب معارض للسفر، لذلك مكانها عمود الـ Cons وليس تحت الـ Pros.",
+        "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+        "type": "mcq",
+        "questionText": "What is the error in this chart?",
+        "options": [
+         "'It takes too long' is a con, not a pro",
+         "'I can discover new ways to do things' is a con",
+         "The topic should be in the Cons column"
+        ],
+        "correctAnswer": "'It takes too long' is a con, not a pro",
+        "conceptCheck": true,
+        "questionTextArabic": "ما الخطأ في هذا الجدول؟",
+        "example": "Topic: Travel Abroad on Vacation. Pros: I can discover new ways to do things. It takes too long. Cons: (empty)",
+        "optionsArabic": [
+         "'It takes too long' هي con وليست pro",
+         "'I can discover new ways to do things' هي con",
+         "يجب وضع الموضوع في عمود الـ Cons"
+        ]
+       },
+       {
+        "bloomLevel": "analyze",
+        "explanation": "The strategy is to list pros and cons when you compare; Speaker A does this, while Speaker B skips the comparison.",
+        "explanationArabic": "الاستراتيجية هي كتابة الـ pros والـ cons عند المقارنة؛ المتحدث A يفعل ذلك، بينما المتحدث B يتجاهل المقارنة.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "mcq",
+        "questionText": "Which speaker is using the critical thinking strategy correctly?",
+        "options": [
+         "Speaker A — lists both sides before deciding",
+         "Speaker B — decides without comparing",
+         "Neither speaker uses the strategy"
+        ],
+        "correctAnswer": "Speaker A — lists both sides before deciding",
+        "conceptCheck": true,
+        "questionTextArabic": "أي المتحدثَين يستخدم استراتيجية critical thinking بشكل صحيح؟",
+        "example": "A: Buying a laptop has pros and cons, so I will list both before I decide. B: Buying a laptop has only pros, so I don't need to compare.",
+        "optionsArabic": [
+         "المتحدث A — يكتب الجانبين قبل أن يقرر",
+         "المتحدث B — يقرر دون مقارنة",
+         "لا أحد منهما يستخدم الاستراتيجية"
+        ]
+       }
+      ]
+     },
+     {
+      "level": "challenge",
+      "label": "Challenge",
+      "labelArabic": "تحدّي",
+      "items": [
+       {
+        "bloomLevel": "challenge",
+        "explanation": "Any sentence that gives a benefit of travelling abroad is a good pro — compare yours to the example.",
+        "explanationArabic": "أي جملة تعطي فائدة للسفر إلى الخارج تعتبر pro جيداً — قارن جملتك بالمثال.",
+        "sourceHeading": "Pros and Cons Chart: Travel Abroad on Vacation",
+        "type": "typed",
+        "prompt": "Write one more pro for travelling abroad on vacation. Start with 'I can'.",
+        "acceptableAnswers": [
+         "I can practise speaking English with new people.",
+         "I can see famous places.",
+         "I can try new food.",
+         "I can learn about other cultures.",
+         "I can meet people from other countries."
+        ],
+        "promptArabic": "اكتب سبباً مؤيداً (pro) آخر للسفر إلى الخارج في الإجازة. ابدأ بـ 'I can'."
+       },
+       {
+        "bloomLevel": "challenge",
+        "explanation": "A good con gives a clear problem or disadvantage — a reason against studying far away.",
+        "explanationArabic": "الـ con الجيد يعطي مشكلة أو سلبية واضحة، أي سبباً معارضاً للدراسة بعيداً.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "typed",
+        "prompt": "Write one con for studying at a university far from your family.",
+        "acceptableAnswers": [
+         "I will miss my family.",
+         "It is expensive to live alone.",
+         "I cannot see my family often.",
+         "It is lonely to live far away.",
+         "Travelling home takes a long time."
+        ],
+        "promptArabic": "اكتب سبباً معارضاً (con) واحداً للدراسة في جامعة بعيدة عن عائلتك."
+       },
+       {
+        "bloomLevel": "challenge",
+        "explanation": "The strategy works because it puts reasons for and reasons against side by side, so you can compare them before deciding.",
+        "explanationArabic": "تنجح هذه الاستراتيجية لأنها تضع الأسباب المؤيدة والمعارضة جنباً إلى جنب، فتستطيع مقارنتها قبل اتخاذ القرار.",
+        "sourceHeading": "Critical Thinking Strategy: Identifying Pros and Cons",
+        "type": "typed",
+        "prompt": "In one sentence, explain why listing pros and cons helps you when you compare two choices.",
+        "acceptableAnswers": [
+         "It helps me see the reasons for and against before I decide.",
+         "It shows both sides so I can make a better decision.",
+         "It helps me compare the good points and the bad points.",
+         "I can see the advantages and disadvantages clearly."
+        ],
+        "promptArabic": "في جملة واحدة، اشرح لماذا تساعدك كتابة الـ pros والـ cons عند المقارنة بين خيارين."
+       }
+      ]
+     }
+    ],
+    "generatedAt": "2026-09-15T07:30:45.241Z"
+   },
+   "exercisesRef": "exercises#ex",
+   "replayRef": "presentation#pres",
+   "replayMinutes": 2,
+   "slidesRef": "presentation#pres",
+   "assist": true
+  }
+ ]
+}

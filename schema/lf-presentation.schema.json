@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/lf-1/lf-presentation.schema.json",
+  "title": "lf.presentation block",
+  "type": "object",
+  "required": ["id", "type", "slides", "renderConfig", "tracks", "lessonSlideCount"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+    "type": { "const": "lf.presentation" },
+    "title": { "type": "string" },
+    "slides": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slide" } },
+    "slidesAr": { "type": "array", "items": { "$ref": "#/$defs/slide" } },
+    "renderConfig": { "$ref": "lf-common.schema.json#/$defs/renderConfig" },
+    "tracks": { "$ref": "lf-common.schema.json#/$defs/tracks" },
+    "exercisesRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" },
+    "sessionRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" },
+    "lessonSlideCount": { "type": "integer", "minimum": 1 }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "slide": {
+      "type": "object",
+      "required": ["id", "type", "heading"],
+      "properties": {
+        "id": { "type": "integer", "minimum": 1 },
+        "type": { "type": "string", "enum": ["title", "objectives", "vocabulary", "content", "video", "activity", "recap", "end", "image"] },
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "imageUrlHires": { "type": "string" },
+        "imageUrls": { "type": "array", "items": { "type": "string" } },
+        "layout": { "type": "string" },
+        "activityData": {},
+        "elements": { "type": "array", "items": { "$ref": "lf-common.schema.json#/$defs/slideElement" } }
+      }
+    }
+  }
+}

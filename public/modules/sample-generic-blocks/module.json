@@ -1,0 +1,16 @@
+{
+ "format": "LMP",
+ "formatVersion": "1.0",
+ "id": "sample-generic-blocks",
+ "title": "Sample: every generic block type",
+ "description": "A small module showing what the player already does. Delete it when real lessons arrive.",
+ "language": "en",
+ "languages": ["en"],
+ "thumbnail": "assets/images/sample.png",
+ "entry": "tour",
+ "lessons": [
+  { "id": "tour", "title": "A tour of the block types", "source": "content/tour.json", "kind": "lesson" }
+ ],
+ "tags": ["sample"],
+ "generator": { "name": "lmp-site scaffold", "version": "0.1.0", "exportedAt": "2026-11-05T00:00:00Z" }
+}

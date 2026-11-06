@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/1.0/lmp-manifest.schema.json",
+  "title": "LMP 1.0 manifest (module.json)",
+  "type": "object",
+  "required": ["format", "formatVersion", "id", "title", "language", "entry", "lessons"],
+  "properties": {
+    "format": { "const": "LMP" },
+    "formatVersion": { "type": "string", "pattern": "^1\\.[0-9]+$" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,62}$" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "description": { "type": "string", "maxLength": 2000 },
+    "language": { "$ref": "#/$defs/bcp47" },
+    "languages": { "type": "array", "items": { "$ref": "#/$defs/bcp47" }, "minItems": 1, "uniqueItems": true },
+    "thumbnail": { "$ref": "#/$defs/packagePath" },
+    "entry": { "type": "string", "minLength": 1 },
+    "lessons": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "source"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "source": { "$ref": "#/$defs/packagePath" },
+          "kind": { "type": "string", "enum": ["presentation", "deck", "exercises", "session", "lesson"] }
+        }
+      }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "profiles": { "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*/[0-9]+$" }, "uniqueItems": true },
+    "generator": {
+      "type": "object",
+      "required": ["name", "version", "exportedAt"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "exportedAt": { "type": "string", "format": "date-time" },
+        "sourceId": { "type": "string" },
+        "sourceKind": { "type": "string", "enum": ["extraction", "deck", "other"] }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "exportWarnings": { "type": "array", "items": { "type": "string" } },
+        "scored": { "type": "array", "items": { "type": "string" }, "description": "block refs that count toward the score; default every marked block" },
+        "allowExternal": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "bcp47": { "type": "string", "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$" },
+    "packagePath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(^|/)\\.\\.(/|$))[^\\\\]+$",
+      "description": "relative, forward slashes, no leading slash, no '..'"
+    }
+  }
+}

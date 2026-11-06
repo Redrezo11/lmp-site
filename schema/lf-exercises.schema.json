@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/lf-1/lf-exercises.schema.json",
+  "title": "lf.exercises block",
+  "type": "object",
+  "required": ["id", "type", "items"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+    "type": { "const": "lf.exercises" },
+    "title": { "type": "string" },
+    "items": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "number", "images", "narration"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[0-9a-f]{12}$" },
+          "number": { "type": "integer", "minimum": 1 },
+          "images": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "$ref": "lf-common.schema.json#/$defs/src" } },
+          "narration": { "type": "string" },
+          "narrationAr": { "type": "string" },
+          "audio": { "$ref": "#/$defs/exerciseClip" },
+          "audioAr": { "$ref": "#/$defs/exerciseClip" },
+          "interactive": { "$ref": "#/$defs/interactive" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "exerciseClip": {
+      "allOf": [
+        { "$ref": "lf-common.schema.json#/$defs/clipBody" },
+        { "type": "object", "required": ["captions"] }
+      ]
+    },
+    "interactive": {
+      "type": "object",
+      "required": ["family", "scored", "exercise"],
+      "properties": {
+        "family": {
+          "type": "string",
+          "enum": ["choice", "multi_select", "label_each", "sort_into_groups", "match", "order", "gap_fill", "select_in_text", "rewrite", "chart_fill", "short_answer", "open_writing", "self_check", "class_activity"]
+        },
+        "scored": { "type": "boolean" },
+        "exercise": { "$ref": "#/$defs/digitisedExercise" }
+      }
+    },
+    "digitisedExercise": {
+      "type": "object",
+      "required": ["family", "templateVersion", "instructions", "items", "answerKey"],
+      "properties": {
+        "family": { "type": "string" },
+        "templateVersion": { "type": "integer" },
+        "instructions": { "type": "string" },
+        "instructionsArabic": { "type": "string" },
+        "labels": { "type": "array", "items": { "type": "string" } },
+        "groups": { "type": "array", "items": { "type": "string" } },
+        "rightOptions": { "type": "array", "items": { "type": "string" } },
+        "marks": { "type": "array", "items": { "type": "string" } },
+        "scale": { "type": "string", "enum": ["yesno", "tick", "rating"] },
+        "passage": { "type": "object", "properties": { "title": { "type": "string" }, "text": { "type": "string" }, "numbering": { "type": "string", "enum": ["paragraph", "line", "none"] } } },
+        "passageRef": { "type": "string" },
+        "needsPassage": { "type": "boolean" },
+        "media": { "type": "object", "required": ["kind"], "properties": { "kind": { "type": "string", "enum": ["audio", "video"] }, "note": { "type": "string" }, "url": { "type": "string" } } },
+        "bank": { "type": "object", "required": ["items"], "properties": { "items": { "type": "array", "items": { "type": "string" } }, "reusable": { "type": "boolean" }, "glossary": { "type": "object", "additionalProperties": { "type": "string" } } } },
+        "example": { "type": "object", "required": ["itemIndex"], "properties": { "itemIndex": { "type": "integer", "minimum": 0 } } },
+        "items": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["parts"],
+            "properties": {
+              "number": { "type": "string" },
+              "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/part" } }
+            }
+          }
+        },
+        "rules": { "type": "object", "properties": { "exactCount": { "type": "integer" }, "minRequired": { "type": "integer" }, "anyOrder": { "type": "boolean" }, "choosePrompt": { "type": "boolean" } } },
+        "presentation": { "type": "object", "additionalProperties": { "type": "string" } },
+        "answerKey": { "type": "object", "required": ["status"], "properties": { "status": { "type": "string", "enum": ["unverified", "teacher-checked", "from-key", "none"] } } },
+        "answersFrom": { "type": "string", "enum": ["page", "revealed", "key", "lesson", "none"] },
+        "answersVary": { "type": "boolean" }
+      },
+      "not": { "anyOf": [ { "required": ["deviations"] }, { "required": ["extra"] }, { "required": ["origin"] } ] }
+    },
+    "part": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["choice", "multi", "label", "sort", "match", "order", "gap", "select", "rewrite", "chart", "text", "writing", "self", "info", "evidence", "free"] },
+        "label": { "type": "string" },
+        "grading": { "type": "string", "enum": ["auto", "show", "none"] },
+        "stem": { "type": "string" },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "answer": {},
+        "answers": {},
+        "text": { "type": "string" },
+        "pieces": { "type": "array", "items": { "type": "string" } },
+        "cues": { "type": "array", "items": { "type": "string" } },
+        "prompt": { "type": "string" },
+        "title": { "type": "string" },
+        "columns": { "type": "array", "items": { "type": "string" } },
+        "rows": { "type": "array", "items": { "type": "object", "required": ["cells"], "properties": { "cells": { "type": "array", "items": { "type": "object", "properties": { "given": { "type": "string" }, "answers": { "type": "array", "items": { "type": "string" } }, "open": { "type": "boolean" } } } } } } },
+        "frame": { "type": "string" },
+        "minSentences": { "type": "integer" },
+        "statement": { "type": "string" },
+        "kind": { "type": "string", "enum": ["paragraph", "line"] }
+      }
+    }
+  }
+}

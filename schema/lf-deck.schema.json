@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/lf-1/lf-deck.schema.json",
+  "title": "lf.deck block",
+  "type": "object",
+  "required": ["id", "type", "sourceType", "pageCount", "slides", "renderConfig", "tracks"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+    "type": { "const": "lf.deck" },
+    "title": { "type": "string" },
+    "sourceType": { "type": "string", "enum": ["pdf", "pptx"] },
+    "pageCount": { "type": "integer", "minimum": 1 },
+    "proficiency": { "type": "string", "enum": ["A1-A2", "B1", "B2+"] },
+    "slides": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "n", "type", "heading"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "n": { "type": "integer", "minimum": 1 },
+          "type": { "type": "string", "enum": ["image", "content"] },
+          "heading": { "type": "string" },
+          "imageUrl": { "type": "string", "description": "pdf: package path of the page picture" },
+          "body": { "type": "string", "description": "pptx: paragraphs joined by blank lines" },
+          "elements": { "type": "array", "items": { "$ref": "lf-common.schema.json#/$defs/slideElement" } },
+          "extractedText": { "type": "string" },
+          "notes": { "type": "string" },
+          "title": { "type": "string" },
+          "text": { "type": "array", "items": { "type": "string" } },
+          "visual": { "type": "string" }
+        },
+        "allOf": [
+          { "if": { "properties": { "type": { "const": "image" } } }, "then": { "required": ["imageUrl"] } },
+          { "if": { "properties": { "type": { "const": "content" } } }, "then": { "required": ["body"] } }
+        ]
+      }
+    },
+    "renderConfig": { "$ref": "lf-common.schema.json#/$defs/renderConfig" },
+    "tracks": { "$ref": "lf-common.schema.json#/$defs/tracks" },
+    "sessionRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" }
+  },
+  "additionalProperties": true
+}

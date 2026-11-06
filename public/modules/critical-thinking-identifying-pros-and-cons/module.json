@@ -1,0 +1,65 @@
+{
+ "format": "LMP",
+ "formatVersion": "1.0",
+ "id": "critical-thinking-identifying-pros-and-cons",
+ "title": "Critical Thinking: Identifying Pros and Cons",
+ "description": "Critical Thinking Strategy: Pros and Cons",
+ "language": "en",
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "thumbnail": "assets/images/exercise-db149de6c7b1-1.png",
+ "entry": "presentation",
+ "lessons": [
+  {
+   "id": "presentation",
+   "title": "Lesson",
+   "source": "content/presentation.json",
+   "kind": "presentation"
+  },
+  {
+   "id": "exercises",
+   "title": "Exercises",
+   "source": "content/exercises.json",
+   "kind": "exercises"
+  },
+  {
+   "id": "session",
+   "title": "Student session",
+   "source": "content/session.json",
+   "kind": "session"
+  }
+ ],
+ "tags": [
+  "critical thinking",
+  "pros and cons",
+  "comparing ideas",
+  "decision making",
+  "chart"
+ ],
+ "profiles": [
+  "lf/1"
+ ],
+ "generator": {
+  "name": "LessonForge",
+  "version": "dev",
+  "exportedAt": "2026-11-04T20:35:09.769Z",
+  "sourceId": "6aa8f35b7a83b1e9ccf0dffd",
+  "sourceKind": "extraction"
+ },
+ "meta": {
+  "course": {
+   "series": "qskills",
+   "unit": "3",
+   "strand": "RW",
+   "level": "1"
+  },
+  "courseKey": "qskills-rw-1",
+  "skillArea": "mixed",
+  "difficulty": "intermediate",
+  "exportWarnings": [
+   "Exercise 1 needs a reading that isn't in the lesson (students need the book)"
+  ]
+ }
+}

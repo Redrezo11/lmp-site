@@ -1,0 +1,82 @@
+{
+ "generatedAt": "2026-11-04T21:18:17.353Z",
+ "modules": [
+  {
+   "id": "critical-thinking-identifying-pros-and-cons",
+   "title": "Critical Thinking: Identifying Pros and Cons",
+   "description": "Critical Thinking Strategy: Pros and Cons",
+   "language": "en",
+   "languages": [
+    "en",
+    "ar"
+   ],
+   "thumbnail": "modules/critical-thinking-identifying-pros-and-cons/assets/images/exercise-db149de6c7b1-1.png",
+   "tags": [
+    "critical thinking",
+    "pros and cons",
+    "comparing ideas",
+    "decision making",
+    "chart"
+   ],
+   "profiles": [
+    "lf/1"
+   ],
+   "meta": {
+    "course": {
+     "series": "qskills",
+     "unit": "3",
+     "strand": "RW",
+     "level": "1"
+    },
+    "courseKey": "qskills-rw-1",
+    "skillArea": "mixed",
+    "difficulty": "intermediate"
+   },
+   "path": "modules/critical-thinking-identifying-pros-and-cons/",
+   "sizeBytes": 4905658,
+   "lessons": [
+    {
+     "id": "presentation",
+     "title": "Lesson",
+     "kind": "presentation"
+    },
+    {
+     "id": "exercises",
+     "title": "Exercises",
+     "kind": "exercises"
+    },
+    {
+     "id": "session",
+     "title": "Student session",
+     "kind": "session"
+    }
+   ],
+   "exportedAt": "2026-11-04T20:35:09.769Z"
+  },
+  {
+   "id": "sample-generic-blocks",
+   "title": "Sample: every generic block type",
+   "description": "A small module showing what the player already does. Delete it when real lessons arrive.",
+   "language": "en",
+   "languages": [
+    "en"
+   ],
+   "thumbnail": "modules/sample-generic-blocks/assets/images/sample.png",
+   "tags": [
+    "sample"
+   ],
+   "profiles": [],
+   "meta": {},
+   "path": "modules/sample-generic-blocks/",
+   "sizeBytes": 355307,
+   "lessons": [
+    {
+     "id": "tour",
+     "title": "A tour of the block types",
+     "kind": "lesson"
+    }
+   ],
+   "exportedAt": "2026-11-05T00:00:00Z"
+  }
+ ]
+}

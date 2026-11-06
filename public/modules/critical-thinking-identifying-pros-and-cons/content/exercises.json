@@ -1,0 +1,327 @@
+{
+ "id": "exercises",
+ "title": "Exercises",
+ "blocks": [
+  {
+   "id": "ex",
+   "type": "lf.exercises",
+   "items": [
+    {
+     "id": "db149de6c7b1",
+     "number": 1,
+     "images": [
+      "assets/images/exercise-db149de6c7b1-1.png"
+     ],
+     "narration": "Let's practice identifying the pros and cons of long and short vacations. First, reread the blog post and look at the two charts on your screen. Pros are advantages, and cons are disadvantages. Write the advantages in the Pros column and the disadvantages in the Cons column for each type of vacation. For example, one advantage of a long vacation is that it can improve creative thinking and problem-solving, so we can write that in the first box under Long vacations: Pros. Remember, identifying pros and cons helps us compare different choices and understand their benefits and drawbacks. Now complete the remaining boxes using information from the blog post. You've got five minutes, and then we'll compare our answers as a class.",
+     "narrationAr": "هيا نتدرّب على تحديد الـ Pros والـ Cons للإجازات الطويلة والقصيرة. أولًا، أعيدوا قراءة تدوينة المدونة، ثم انظروا إلى الجدولين على الشاشة. كلمة Pros تعني المزايا أو الإيجابيات، وكلمة Cons تعني العيوب أو السلبيات. اكتبوا المزايا في عمود Pros والعيوب في عمود Cons لكل نوع من الإجازات. على سبيل المثال، إحدى مزايا الإجازة الطويلة أنها قد تحسّن التفكير الإبداعي والقدرة على حل المشكلات، لذلك نكتب هذه الفكرة في المربع الأول تحت Long vacations: Pros. تذكّروا أن تحديد الـ Pros والـ Cons يساعدنا على المقارنة بين الخيارات المختلفة وفهم فوائدها وعيوبها. الآن أكملوا المربعات المتبقية باستخدام المعلومات الواردة في تدوينة المدونة. لديكم 5 دقائق، وبعد ذلك سنقارن إجاباتنا معًا في الصف.",
+     "audio": {
+      "src": "assets/audio/en/exercise-db149de6c7b1.mp3",
+      "mime": "audio/mpeg",
+      "duration": 42.72,
+      "narration": "Let's practice identifying the pros and cons of long and short vacations. First, reread the blog post and look at the two charts on your screen. Pros are advantages, and cons are disadvantages. Write the advantages in the Pros column and the disadvantages in the Cons column for each type of vacation. For example, one advantage of a long vacation is that it can improve creative thinking and problem-solving, so we can write that in the first box under Long vacations: Pros. Remember, identifying pros and cons helps us compare different choices and understand their benefits and drawbacks. Now complete the remaining boxes using information from the blog post. You've got five minutes, and then we'll compare our answers as a class.",
+      "captions": [
+       {
+        "start": 0,
+        "end": 4.76,
+        "text": "Let's practice identifying the pros and cons of long and short vacations."
+       },
+       {
+        "start": 4.76,
+        "end": 6.8,
+        "text": "First, reread the blog post and look"
+       },
+       {
+        "start": 6.8,
+        "end": 7.96,
+        "text": "at the two charts on your screen."
+       },
+       {
+        "start": 7.96,
+        "end": 11.2,
+        "text": "Pros are advantages, and cons are disadvantages."
+       },
+       {
+        "start": 11.2,
+        "end": 14.76,
+        "text": "Write the advantages in the Pros column and the disadvantages"
+       },
+       {
+        "start": 14.76,
+        "end": 17.38,
+        "text": "in the Cons column for each type of vacation."
+       },
+       {
+        "start": 17.38,
+        "end": 20.92,
+        "text": "For example, one advantage of a long vacation is that"
+       },
+       {
+        "start": 20.92,
+        "end": 22.96,
+        "text": "it can improve creative thinking and problem-solving,"
+       },
+       {
+        "start": 22.96,
+        "end": 24.82,
+        "text": "so we can write that in the"
+       },
+       {
+        "start": 24.82,
+        "end": 26.6,
+        "text": "first box under Long vacations: Pros."
+       },
+       {
+        "start": 26.6,
+        "end": 30.56,
+        "text": "Remember, identifying pros and cons helps us compare"
+       },
+       {
+        "start": 30.56,
+        "end": 33.52,
+        "text": "different choices and understand their benefits and drawbacks."
+       },
+       {
+        "start": 33.52,
+        "end": 38,
+        "text": "Now complete the remaining boxes using information from the blog post."
+       },
+       {
+        "start": 38,
+        "end": 39.58,
+        "text": "You've got five minutes,"
+       },
+       {
+        "start": 39.58,
+        "end": 42.72,
+        "text": "and then we'll compare our answers as a class."
+       }
+      ],
+      "timingSource": "whisper"
+     },
+     "audioAr": {
+      "src": "assets/audio/ar/exercise-db149de6c7b1.mp3",
+      "mime": "audio/mpeg",
+      "duration": 50.904,
+      "narration": "هيا نتدرّب على تحديد الـ Pros والـ Cons للإجازات الطويلة والقصيرة. أولًا، أعيدوا قراءة تدوينة المدونة، ثم انظروا إلى الجدولين على الشاشة. كلمة Pros تعني المزايا أو الإيجابيات، وكلمة Cons تعني العيوب أو السلبيات. اكتبوا المزايا في عمود Pros والعيوب في عمود Cons لكل نوع من الإجازات. على سبيل المثال، إحدى مزايا الإجازة الطويلة أنها قد تحسّن التفكير الإبداعي والقدرة على حل المشكلات، لذلك نكتب هذه الفكرة في المربع الأول تحت Long vacations: Pros. تذكّروا أن تحديد الـ Pros والـ Cons يساعدنا على المقارنة بين الخيارات المختلفة وفهم فوائدها وعيوبها. الآن أكملوا المربعات المتبقية باستخدام المعلومات الواردة في تدوينة المدونة. لديكم 5 دقائق، وبعد ذلك سنقارن إجاباتنا معًا في الصف.",
+      "captions": [
+       {
+        "start": 0,
+        "end": 4.54,
+        "text": "هيا نتدرّب على تحديد الـ Pros والـ Cons للإجازات الطويلة والقصيرة."
+       },
+       {
+        "start": 4.54,
+        "end": 10.5,
+        "text": "أولًا، أعيدوا قراءة تدوينة المدونة، ثم انظروا إلى الجدولين على الشاشة."
+       },
+       {
+        "start": 10.5,
+        "end": 16.5,
+        "text": "كلمة Pros تعني المزايا أو الإيجابيات، وكلمة Cons تعني العيوب أو السلبيات."
+       },
+       {
+        "start": 16.5,
+        "end": 18.9,
+        "text": "اكتبوا المزايا في عمود Pros والعيوب في"
+       },
+       {
+        "start": 18.9,
+        "end": 21.48,
+        "text": "عمود Cons لكل نوع من الإجازات."
+       },
+       {
+        "start": 21.48,
+        "end": 25.02,
+        "text": "على سبيل المثال، إحدى مزايا الإجازة الطويلة أنها قد"
+       },
+       {
+        "start": 25.02,
+        "end": 27.84,
+        "text": "تحسّن التفكير الإبداعي والقدرة على حل المشكلات،"
+       },
+       {
+        "start": 27.84,
+        "end": 32.92,
+        "text": "لذلك نكتب هذه الفكرة في المربع الأول تحت Long vacations: Pros."
+       },
+       {
+        "start": 32.92,
+        "end": 37,
+        "text": "تذكّروا أن تحديد الـ Pros والـ Cons يساعدنا"
+       },
+       {
+        "start": 37,
+        "end": 41.5,
+        "text": "على المقارنة بين الخيارات المختلفة وفهم فوائدها وعيوبها."
+       },
+       {
+        "start": 41.5,
+        "end": 46.4,
+        "text": "الآن أكملوا المربعات المتبقية باستخدام المعلومات الواردة في تدوينة المدونة."
+       },
+       {
+        "start": 46.4,
+        "end": 50.9,
+        "text": "لديكم 5 دقائق، وبعد ذلك سنقارن إجاباتنا معًا في الصف."
+       }
+      ],
+      "timingSource": "whisper"
+     },
+     "interactive": {
+      "family": "chart_fill",
+      "scored": true,
+      "exercise": {
+       "family": "chart_fill",
+       "templateVersion": 1,
+       "instructions": "C. IDENTIFY Reread the blog post. List the pros and cons of each type of vacation. Compare your answers with the class.",
+       "answerKey": {
+        "status": "from-key"
+       },
+       "items": [
+        {
+         "parts": [
+          {
+           "type": "chart",
+           "title": "Long vacations",
+           "columns": [
+            "Pros",
+            "Cons"
+           ],
+           "rows": [
+            {
+             "cells": [
+              {
+               "answers": [
+                "More creative thinking and better problem-solving"
+               ]
+              },
+              {
+               "answers": [
+                "More likely to check email and worry about work"
+               ]
+              }
+             ]
+            },
+            {
+             "cells": [
+              {
+               "answers": [
+                "Better sleep for more days"
+               ]
+              },
+              {
+               "answers": [
+                "Difficult to plan a long vacation that works with everyone's schedule"
+               ]
+              }
+             ]
+            },
+            {
+             "cells": [
+              {
+               "answers": [
+                "More relaxing days for your travel stress"
+               ]
+              },
+              {
+               "open": true
+              }
+             ]
+            },
+            {
+             "cells": [
+              {
+               "answers": [
+                "Coworkers more likely to take care of problems"
+               ]
+              },
+              {
+               "open": true
+              }
+             ]
+            }
+           ],
+           "grading": "show"
+          }
+         ],
+         "number": "1"
+        },
+        {
+         "parts": [
+          {
+           "type": "chart",
+           "title": "Short vacations",
+           "columns": [
+            "Pros",
+            "Cons"
+           ],
+           "rows": [
+            {
+             "cells": [
+              {
+               "answers": [
+                "Can experience the fun of planning for more vacations"
+               ]
+              },
+              {
+               "answers": [
+                "Don't get as much good sleep"
+               ]
+              }
+             ]
+            },
+            {
+             "cells": [
+              {
+               "answers": [
+                "Helps you feel positive more often"
+               ]
+              },
+              {
+               "answers": [
+                "Fewer relaxing days for your travel stress"
+               ]
+              }
+             ]
+            },
+            {
+             "cells": [
+              {
+               "answers": [
+                "Easier to fit into our schedules"
+               ]
+              },
+              {
+               "open": true
+              }
+             ]
+            }
+           ],
+           "grading": "show"
+          }
+         ],
+         "number": "2"
+        }
+       ],
+       "instructionsArabic": "C. IDENTIFY: أعد قراءة تدوينة المدونة. اكتب مزايا (Pros) وعيوب (Cons) كل نوع من أنواع الإجازات. قارن إجاباتك مع زملائك في الصف.",
+       "needsPassage": true,
+       "presentation": {
+        "numbering": "none",
+        "optionLayout": "two_separate_charts",
+        "answerArea": "chart_cells",
+        "chartHeadings": "Long vacations; Short vacations",
+        "columnHeadings": "Pros; Cons",
+        "longVacationsProsSlots": "4",
+        "longVacationsConsSlots": "2",
+        "shortVacationsProsSlots": "3",
+        "shortVacationsConsSlots": "2"
+       },
+       "answersFrom": "key",
+       "answersVary": true
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+export { TitleSlide } from './TitleSlide';
+export { ObjectivesSlide } from './ObjectivesSlide';
+export { VocabularySlide } from './VocabularySlide';
+export { ContentSlide } from './ContentSlide';
+export { ActivitySlide } from './ActivitySlide';
+export { VideoSlide } from './VideoSlide';
+export { RecapSlide } from './RecapSlide';
+export { AssessmentSlide } from './AssessmentSlide';
+export { EndSlide } from './EndSlide';

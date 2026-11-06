@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", sans-serif;
+}
+
+[dir="rtl"] {
+  font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* Fonts: @font-face rules are in public/fonts/fonts.css (linked from index.html). */
+
+/* ── From LessonForge src/index.css (the reveal and annotation styles only) ── */
+/* Progressive reveal for slide elements synced to audio */
+.reveal-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition-timing-function: ease;
+}
+.reveal-wrapper.revealed {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Real-time text annotations via CSS Custom Highlights API */
+::highlight(annotation-subject) { background-color: rgba(250, 204, 21, 0.4); }
+::highlight(annotation-verb) { background-color: rgba(34, 197, 94, 0.35); }
+::highlight(annotation-adjective) { background-color: rgba(59, 130, 246, 0.3); }
+::highlight(annotation-error) { background-color: rgba(239, 68, 68, 0.3); }
+::highlight(annotation-generic) { background-color: rgba(168, 85, 247, 0.3); }
+
+::highlight(annotation-underline-yellow) { text-decoration: underline 3px rgba(250, 204, 21, 0.9); text-underline-offset: 3px; }
+::highlight(annotation-underline-green) { text-decoration: underline 3px rgba(34, 197, 94, 0.9); text-underline-offset: 3px; }
+::highlight(annotation-underline-blue) { text-decoration: underline 3px rgba(59, 130, 246, 0.9); text-underline-offset: 3px; }
+::highlight(annotation-underline-red) { text-decoration: underline 3px rgba(239, 68, 68, 0.9); text-underline-offset: 3px; }
+
+::highlight(annotation-color-yellow) { color: #ca8a04; }
+::highlight(annotation-color-green) { color: #16a34a; }
+::highlight(annotation-color-blue) { color: #2563eb; }
+::highlight(annotation-color-red) { color: #dc2626; }
+
+::highlight(annotation-strike) { text-decoration: line-through 2px rgba(239, 68, 68, 0.8); color: rgba(0, 0, 0, 0.5); }
+
+/* Margin labels — positioned below highlighted words */
+.annotation-label {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.annotation-label.visible {
+  opacity: 1;
+}
+.annotation-label-yellow {
+  background-color: #FDE68A;
+  border: 1px solid #FCD34D;
+  color: #b45309;
+}
+.annotation-label-green {
+  background-color: #BBF7D0;
+  border: 1px solid #86EFAC;
+  color: #15803d;
+}
+.annotation-label-blue {
+  background-color: #BFDBFE;
+  border: 1px solid #93C5FD;
+  color: #1d4ed8;
+}
+.annotation-label-red {
+  background-color: #FECACA;
+  border: 1px solid #FCA5A5;
+  color: #dc2626;
+}
+
+/* ── LMP site: <mark> fallback for browsers without the CSS Custom Highlight API
+   (format sheet §7.4). Same colours as the ::highlight() rules above. ── */
+mark.annotation-mark { background: transparent; color: inherit; }
+mark.annotation-subject { background-color: rgba(250, 204, 21, 0.4); }
+mark.annotation-verb { background-color: rgba(34, 197, 94, 0.35); }
+mark.annotation-adjective { background-color: rgba(59, 130, 246, 0.3); }
+mark.annotation-error { background-color: rgba(239, 68, 68, 0.3); }
+mark.annotation-generic { background-color: rgba(168, 85, 247, 0.3); }
+mark.annotation-underline-yellow { text-decoration: underline 3px rgba(250, 204, 21, 0.9); text-underline-offset: 3px; }
+mark.annotation-underline-green { text-decoration: underline 3px rgba(34, 197, 94, 0.9); text-underline-offset: 3px; }
+mark.annotation-underline-blue { text-decoration: underline 3px rgba(59, 130, 246, 0.9); text-underline-offset: 3px; }
+mark.annotation-underline-red { text-decoration: underline 3px rgba(239, 68, 68, 0.9); text-underline-offset: 3px; }
+mark.annotation-color-yellow { color: #ca8a04; }
+mark.annotation-color-green { color: #16a34a; }
+mark.annotation-color-blue { color: #2563eb; }
+mark.annotation-color-red { color: #dc2626; }
+mark.annotation-strike { text-decoration: line-through 2px rgba(239, 68, 68, 0.8); color: rgba(0, 0, 0, 0.5); }

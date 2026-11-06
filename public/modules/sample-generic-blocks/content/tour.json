@@ -1,0 +1,18 @@
+{
+ "id": "tour",
+ "title": "A tour of the block types",
+ "blocks": [
+  { "id": "intro", "type": "text", "markdown": "## Welcome\n\nThis sample shows every **generic** block type the player supports today.\n\n- text, pictures, audio with a transcript\n- seven kinds of question, marked in your browser\n\nNothing you answer leaves this device." },
+  { "id": "pic", "type": "image", "src": "assets/images/sample.png", "alt": "A page from a textbook exercise", "caption": "A picture block. The picture is inside the module." },
+  { "id": "listen", "type": "audio", "title": "An audio block", "src": "assets/audio/sample.mp3", "mime": "audio/mpeg", "transcript": "The narration of this clip is shown here as a transcript." },
+  { "id": "tip", "type": "info", "tone": "tip", "text": "Information panels hold a tip or an instruction. Nothing to answer." },
+  { "id": "q1", "type": "multiple-choice", "question": "Which word is a noun?", "options": [ { "id": "a", "text": "quickly" }, { "id": "b", "text": "decision" }, { "id": "c", "text": "decide" } ], "correct": ["b"], "feedback": { "correct": "Yes: decision is a noun.", "incorrect": "Look for the word that names a thing." } },
+  { "id": "q2", "type": "multiple-response", "question": "Which are advantages of a long vacation?", "options": [ { "id": "a", "text": "better sleep" }, { "id": "b", "text": "more relaxing days" }, { "id": "c", "text": "harder to plan" } ], "correct": ["a", "b"] },
+  { "id": "q3", "type": "true-false", "statement": "A con is a reason against something.", "correct": true },
+  { "id": "q4", "type": "fill-blank", "text": "Sales are {{1}} all the time.", "answers": [["increasing"]] },
+  { "id": "q5", "type": "matching", "pairs": [ { "left": "pro", "right": "a reason for" }, { "left": "con", "right": "a reason against" }, { "left": "decision", "right": "a choice you make" } ] },
+  { "id": "q6", "type": "ordering", "items": ["List the pros.", "List the cons.", "Compare them.", "Decide."] },
+  { "id": "q7", "type": "short-answer", "prompt": "Write one pro of a short vacation.", "answers": ["It is easier to plan."], "mode": "compare" },
+  { "id": "end", "type": "summary", "title": "What you saw", "points": ["Content blocks: text, picture, audio, information", "Questions marked automatically, or compared with a model answer", "Lessons from LessonForge play in phase 2"] }
+ ]
+}

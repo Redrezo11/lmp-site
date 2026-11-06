@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/lf-1/lf-student-session.schema.json",
+  "title": "lf.student-session block",
+  "type": "object",
+  "required": ["id", "type", "assist"],
+  "anyOf": [ { "required": ["quiz"] }, { "required": ["practice"] }, { "required": ["exercisesRef"] } ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+    "type": { "const": "lf.student-session" },
+    "title": { "type": "string" },
+    "quiz": { "type": "array", "items": { "$ref": "#/$defs/assessmentQuestion" } },
+    "practice": { "$ref": "#/$defs/practiceSet" },
+    "exercisesRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" },
+    "replayRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" },
+    "replayMinutes": { "type": "integer", "minimum": 1 },
+    "slidesRef": { "$ref": "lf-common.schema.json#/$defs/blockRef" },
+    "assist": { "const": true }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "assessmentQuestion": {
+      "type": "object",
+      "required": ["type", "questionText", "options", "correctAnswer", "explanation", "explanationArabic"],
+      "properties": {
+        "type": { "type": "string", "enum": ["multiple-choice", "gap-fill"] },
+        "questionText": { "type": "string" },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "correctAnswer": { "type": "string" },
+        "explanation": { "type": "string" },
+        "explanationArabic": { "type": "string" },
+        "sourceHeading": { "type": "string" },
+        "conceptCheck": { "type": "boolean" },
+        "questionTextArabic": { "type": "string" },
+        "optionsArabic": { "type": "array", "items": { "type": "string" } },
+        "example": { "type": "string" }
+      }
+    },
+    "practiceSet": {
+      "type": "object",
+      "required": ["title", "band", "levels"],
+      "properties": {
+        "title": { "type": "string" },
+        "band": { "type": "string", "enum": ["A1-A2", "B1", "B2+"] },
+        "generatedAt": { "type": "string" },
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "label", "labelArabic", "items"],
+            "properties": {
+              "level": { "type": "string", "enum": ["remember", "understand", "apply", "analyze", "challenge"] },
+              "label": { "type": "string" },
+              "labelArabic": { "type": "string" },
+              "items": { "type": "array", "items": { "$ref": "#/$defs/practiceItem" } }
+            }
+          }
+        }
+      }
+    },
+    "practiceItem": {
+      "type": "object",
+      "required": ["type", "bloomLevel", "explanation", "explanationArabic"],
+      "properties": {
+        "type": { "type": "string", "enum": ["match", "mcq", "order", "typed", "select"] },
+        "bloomLevel": { "type": "string", "enum": ["quiz", "remember", "understand", "apply", "analyze", "challenge"] },
+        "explanation": { "type": "string" },
+        "explanationArabic": { "type": "string" },
+        "sourceHeading": { "type": "string" },
+        "instructions": { "type": "string" },
+        "instructionsArabic": { "type": "string" },
+        "pairs": { "type": "array", "items": { "type": "object", "required": ["left", "right"], "properties": { "left": { "type": "string" }, "right": { "type": "string" } } } },
+        "questionText": { "type": "string" },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "correctAnswer": { "type": "string" },
+        "typedEligible": { "type": "boolean" },
+        "conceptCheck": { "type": "boolean" },
+        "questionTextArabic": { "type": "string" },
+        "optionsArabic": { "type": "array", "items": { "type": "string" } },
+        "example": { "type": "string" },
+        "correctSentence": { "type": "string" },
+        "words": { "type": "array", "items": { "type": "string" } },
+        "prompt": { "type": "string" },
+        "promptArabic": { "type": "string" },
+        "acceptableAnswers": { "type": "array", "items": { "type": "string" } },
+        "selfCheck": { "type": "boolean" },
+        "lines": { "type": "array", "items": { "type": "object", "required": ["label", "acceptableAnswers"], "properties": { "label": { "type": "string" }, "prompt": { "type": "string" }, "acceptableAnswers": { "type": "array", "items": { "type": "string" } }, "group": { "type": "string" } } } },
+        "anyOrder": { "type": "boolean" },
+        "vary": { "type": "boolean" },
+        "text": { "type": "string" },
+        "marks": { "type": "array", "items": { "type": "string" } },
+        "answer": { "type": "array", "items": { "type": "object", "required": ["mark", "span"], "properties": { "mark": { "type": "string" }, "span": { "type": "string" } } } }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "match" } } }, "then": { "required": ["pairs"] } },
+        { "if": { "properties": { "type": { "const": "mcq" } } }, "then": { "required": ["questionText", "options", "correctAnswer"] } },
+        { "if": { "properties": { "type": { "const": "order" } } }, "then": { "required": ["correctSentence"] } },
+        { "if": { "properties": { "type": { "const": "typed" } } }, "then": { "required": ["prompt", "acceptableAnswers"] } },
+        { "if": { "properties": { "type": { "const": "select" } } }, "then": { "required": ["text", "marks", "answer"] } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,534 @@
+{
+ "id": "presentation",
+ "title": "Lesson",
+ "blocks": [
+  {
+   "id": "pres",
+   "type": "lf.presentation",
+   "title": "Critical Thinking: Identifying Pros and Cons",
+   "slides": [
+    {
+     "id": 1,
+     "type": "title",
+     "heading": "Critical Thinking: Identifying Pros and Cons",
+     "body": "English (Critical Thinking Skills) • Preparatory Year Programme (Intermediate)",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "Critical Thinking: Identifying Pros and Cons",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "subtitle",
+       "content": "English (Critical Thinking Skills) • Preparatory Year Programme (Intermediate)",
+       "type": "body",
+       "revealGroup": 0
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "type": "content",
+     "heading": "Critical Thinking Strategy: Identifying Pros and Cons",
+     "body": "When you compare, it is helpful to list the **pros** (reasons for) and **cons** (reasons against) doing something.\n\n*For example: Travel Abroad on Vacation*",
+     "layout": "full-width",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "Critical Thinking Strategy: Identifying Pros and Cons",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "body_1",
+       "content": "When you compare, it is helpful to list the **pros** (reasons for) and **cons** (reasons against) doing something.",
+       "type": "body",
+       "revealGroup": 1
+      },
+      {
+       "id": "body_2",
+       "content": "*For example: Travel Abroad on Vacation*",
+       "type": "body",
+       "revealGroup": 2
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "type": "content",
+     "heading": "Pros and Cons Chart: Travel Abroad on Vacation",
+     "body": "**Pros:** *I can discover new ways to do things.*\n\n**Cons:** *It takes too long.*",
+     "layout": "full-width",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "Pros and Cons Chart: Travel Abroad on Vacation",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "body_1",
+       "content": "**Pros:** *I can discover new ways to do things.*",
+       "type": "body",
+       "revealGroup": 1
+      },
+      {
+       "id": "body_2",
+       "content": "**Cons:** *It takes too long.*",
+       "type": "body",
+       "revealGroup": 2
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "type": "recap",
+     "heading": "Summary & Recap",
+     "body": "• Identifying pros and cons is a **critical thinking strategy** that helps you compare ideas.\n• **Pros** are reasons for doing something; **cons** are reasons against doing it.\n• Listing pros and cons in a chart makes the two sides easy to see side by side.\n• The textbook example compares the pros and cons of *travelling abroad on vacation*.",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "Summary & Recap",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "bullet_1",
+       "content": "Identifying pros and cons is a **critical thinking strategy** that helps you compare ideas.",
+       "type": "bullet",
+       "revealGroup": 1
+      },
+      {
+       "id": "bullet_2",
+       "content": "**Pros** are reasons for doing something; **cons** are reasons against doing it.",
+       "type": "bullet",
+       "revealGroup": 2
+      },
+      {
+       "id": "bullet_3",
+       "content": "Listing pros and cons in a chart makes the two sides easy to see side by side.",
+       "type": "bullet",
+       "revealGroup": 3
+      },
+      {
+       "id": "bullet_4",
+       "content": "The textbook example compares the pros and cons of *travelling abroad on vacation*.",
+       "type": "bullet",
+       "revealGroup": 4
+      }
+     ]
+    }
+   ],
+   "slidesAr": [
+    {
+     "id": 1,
+     "type": "title",
+     "heading": "التفكير الناقد: تحديد الإيجابيات والسلبيات (Pros and Cons)",
+     "body": "اللغة الإنجليزية (مهارات التفكير الناقد) • السنة التحضيرية (المستوى المتوسط)",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "التفكير الناقد: تحديد الإيجابيات والسلبيات (Pros and Cons)",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "subtitle",
+       "content": "اللغة الإنجليزية (مهارات التفكير الناقد) • السنة التحضيرية (المستوى المتوسط)",
+       "type": "body",
+       "revealGroup": 0
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "type": "content",
+     "heading": "استراتيجية التفكير الناقد: تحديد الـ Pros والـ Cons",
+     "body": "عندما تقارن، من المفيد أن تكتب قائمة بالـ **pros** (الأسباب المؤيدة) والـ **cons** (الأسباب المعارضة) لفعل شيء ما.\n\n*مثال: Travel Abroad on Vacation (السفر إلى الخارج في الإجازة)*",
+     "layout": "full-width",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "استراتيجية التفكير الناقد: تحديد الـ Pros والـ Cons",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "body_1",
+       "content": "عندما تقارن، من المفيد أن تكتب قائمة بالـ **pros** (الأسباب المؤيدة) والـ **cons** (الأسباب المعارضة) لفعل شيء ما.",
+       "type": "body",
+       "revealGroup": 1
+      },
+      {
+       "id": "body_2",
+       "content": "*مثال: Travel Abroad on Vacation (السفر إلى الخارج في الإجازة)*",
+       "type": "body",
+       "revealGroup": 2
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "type": "content",
+     "heading": "جدول الـ Pros والـ Cons: السفر إلى الخارج في الإجازة",
+     "body": "**Pros:** *I can discover new ways to do things.* (يمكنني اكتشاف طرق جديدة لفعل الأشياء.)\n\n**Cons:** *It takes too long.* (يستغرق وقتاً طويلاً جداً.)",
+     "layout": "full-width",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "جدول الـ Pros والـ Cons: السفر إلى الخارج في الإجازة",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "body_1",
+       "content": "**Pros:** *I can discover new ways to do things.* (يمكنني اكتشاف طرق جديدة لفعل الأشياء.)",
+       "type": "body",
+       "revealGroup": 1
+      },
+      {
+       "id": "body_2",
+       "content": "**Cons:** *It takes too long.* (يستغرق وقتاً طويلاً جداً.)",
+       "type": "body",
+       "revealGroup": 2
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "type": "recap",
+     "heading": "Summary & Recap",
+     "body": "• تحديد الـ pros والـ cons هو **استراتيجية تفكير ناقد** تساعدك على مقارنة الأفكار.\n• الـ **pros** هي الأسباب المؤيدة لفعل شيء ما، والـ **cons** هي الأسباب المعارضة له.\n• كتابة الـ pros والـ cons في جدول تجعل الجانبين واضحين جنباً إلى جنب.\n• مثال الكتاب يقارن بين إيجابيات وسلبيات *السفر إلى الخارج في الإجازة*.",
+     "elements": [
+      {
+       "id": "heading",
+       "content": "Summary & Recap",
+       "type": "heading",
+       "revealGroup": 0
+      },
+      {
+       "id": "bullet_1",
+       "content": "تحديد الـ pros والـ cons هو **استراتيجية تفكير ناقد** تساعدك على مقارنة الأفكار.",
+       "type": "bullet",
+       "revealGroup": 1
+      },
+      {
+       "id": "bullet_2",
+       "content": "الـ **pros** هي الأسباب المؤيدة لفعل شيء ما، والـ **cons** هي الأسباب المعارضة له.",
+       "type": "bullet",
+       "revealGroup": 2
+      },
+      {
+       "id": "bullet_3",
+       "content": "كتابة الـ pros والـ cons في جدول تجعل الجانبين واضحين جنباً إلى جنب.",
+       "type": "bullet",
+       "revealGroup": 3
+      },
+      {
+       "id": "bullet_4",
+       "content": "مثال الكتاب يقارن بين إيجابيات وسلبيات *السفر إلى الخارج في الإجازة*.",
+       "type": "bullet",
+       "revealGroup": 4
+      }
+     ]
+    }
+   ],
+   "renderConfig": {
+    "theme": {
+     "titleBg": "1E293B",
+     "contentBg": "F8FAFC",
+     "titleFontColor": "FFFFFF",
+     "headingFontColor": "1E293B",
+     "bodyFontColor": "334155",
+     "accentColor": "6366F1"
+    },
+    "headingFont": "Calibri Light",
+    "bodyFont": "Calibri",
+    "bulletCharacter": "25BA",
+    "isHeadingItalic": false,
+    "vocabTermStyle": "bold",
+    "lineSpacing": 1.2,
+    "slideTypography": {
+     "title": {
+      "headingSize": 32,
+      "bodySize": 18,
+      "textAlign": "center"
+     },
+     "objectives": {
+      "headingSize": 28,
+      "bodySize": 16,
+      "textAlign": "left"
+     },
+     "vocabulary": {
+      "headingSize": 28,
+      "bodySize": 14,
+      "textAlign": "left"
+     },
+     "content": {
+      "headingSize": 28,
+      "bodySize": 16,
+      "textAlign": "left"
+     },
+     "activity": {
+      "headingSize": 28,
+      "bodySize": 14,
+      "textAlign": "left"
+     },
+     "video": {
+      "headingSize": 30,
+      "bodySize": 16,
+      "textAlign": "left"
+     },
+     "recap": {
+      "headingSize": 28,
+      "bodySize": 16,
+      "textAlign": "left"
+     },
+     "end": {
+      "headingSize": 32,
+      "bodySize": 18,
+      "textAlign": "center"
+     }
+    }
+   },
+   "tracks": {
+    "en": [
+     {
+      "slideId": 1,
+      "src": "assets/audio/en/slide-1.mp3",
+      "mime": "audio/mpeg",
+      "duration": 11.856,
+      "narration": "Welcome, everyone. Today we're looking at a critical thinking strategy called identifying pros and cons. It's a simple tool you can use whenever you need to compare two ideas or make a decision. Let's get started.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       }
+      ],
+      "annotationTimings": []
+     },
+     {
+      "slideId": 2,
+      "src": "assets/audio/en/slide-2.mp3",
+      "mime": "audio/mpeg",
+      "duration": 32.064,
+      "narration": "Here's the strategy from your textbook. When you compare two things, it's helpful to make a list. The pros are the reasons for doing something — the good points. The cons are the reasons against doing something — the problems or disadvantages. Listing both sides helps you think clearly before you decide. The textbook uses one example topic: travelling abroad on vacation. Imagine you're deciding whether to take a trip abroad this summer — what would go on each side of your list? We'll see the textbook's chart on the next slide.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "body_1",
+        "showAt": 3.0399999618530273
+       },
+       {
+        "elementId": "body_2",
+        "showAt": 19.100000381469727
+       }
+      ],
+      "annotationTimings": [
+       {
+        "type": "highlight",
+        "elementId": "body_1",
+        "targetText": "the pros (reasons for) and cons (reasons against)",
+        "color": "yellow",
+        "showAt": 6.279999923706055,
+        "hideAt": 15.65999984741211
+       }
+      ]
+     },
+     {
+      "slideId": 3,
+      "src": "assets/audio/en/slide-3.mp3",
+      "mime": "audio/mpeg",
+      "duration": 30.912,
+      "narration": "This is the textbook's pros and cons chart for travelling abroad on vacation. On the pros side, the textbook gives one reason for: I can discover new ways to do things. That's a benefit of travel. On the cons side, there's one reason against: It takes too long. That's a disadvantage. Notice how the chart puts the two sides next to each other, so you can compare them at a glance. When you make your own chart, try to add more reasons on each side before you decide.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "body_1",
+        "showAt": 6.039999961853027
+       },
+       {
+        "elementId": "body_2",
+        "showAt": 14.260000228881836
+       }
+      ],
+      "annotationTimings": [
+       {
+        "type": "highlight",
+        "elementId": "body_1",
+        "targetText": "I can discover new ways to do things.",
+        "color": "green",
+        "showAt": 9.580000114440917,
+        "hideAt": 14.260000228881836
+       },
+       {
+        "type": "highlight",
+        "elementId": "body_2",
+        "targetText": "It takes too long.",
+        "color": "red",
+        "showAt": 17.300000381469726,
+        "hideAt": 21.559999465942383
+       }
+      ]
+     },
+     {
+      "slideId": 4,
+      "src": "assets/audio/en/slide-4.mp3",
+      "mime": "audio/mpeg",
+      "duration": 21,
+      "narration": "Let's recap what we covered. Remember the name of the strategy we looked at today — what does it help you do? Which side is the reasons for, and which side is the reasons against? Why is a chart a useful way to list them? And what topic did the textbook use as its example? Good — now you're ready to check your understanding.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "bullet_1",
+        "showAt": 2.5999999046325684
+       },
+       {
+        "elementId": "bullet_2",
+        "showAt": 7.480000019073486
+       },
+       {
+        "elementId": "bullet_3",
+        "showAt": 12.300000190734863
+       },
+       {
+        "elementId": "bullet_4",
+        "showAt": 15.039999961853027
+       }
+      ],
+      "annotationTimings": []
+     }
+    ],
+    "ar": [
+     {
+      "slideId": 1,
+      "src": "assets/audio/ar/slide-1.mp3",
+      "mime": "audio/mpeg",
+      "duration": 20.208,
+      "narration": "أهلاً بكم جميعاً. اليوم سنتعرف على استراتيجية من استراتيجيات التفكير الناقد اسمها identifying pros and cons. إنها أداة بسيطة يمكنكم استخدامها كلما احتجتم إلى مقارنة فكرتين أو اتخاذ قرار. لنبدأ.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       }
+      ],
+      "annotationTimings": []
+     },
+     {
+      "slideId": 2,
+      "src": "assets/audio/ar/slide-2.mp3",
+      "mime": "audio/mpeg",
+      "duration": 42.168,
+      "narration": "هذه هي الاستراتيجية كما وردت في كتابكم. عندما تقارنون بين شيئين، من المفيد أن تكتبوا قائمة. الـ pros هي الأسباب المؤيدة لفعل شيء ما، أي النقاط الإيجابية. والـ cons هي الأسباب المعارضة، أي المشكلات أو السلبيات. كتابة الجانبين تساعدكم على التفكير بوضوح قبل اتخاذ القرار. يستخدم الكتاب موضوعاً واحداً كمثال: السفر إلى الخارج في الإجازة. تخيلوا أنكم تقررون هل تسافرون هذا الصيف أم لا؛ ماذا ستكتبون في كل جانب؟ سنرى جدول الكتاب في الشريحة التالية.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "body_1",
+        "showAt": 4.599999904632568
+       },
+       {
+        "elementId": "body_2",
+        "showAt": 27.079999923706055
+       }
+      ],
+      "annotationTimings": [
+       {
+        "type": "highlight",
+        "elementId": "body_1",
+        "targetText": "بالـ pros (الأسباب المؤيدة) والـ cons (الأسباب المعارضة)",
+        "color": "yellow",
+        "showAt": 9.239999961853027,
+        "hideAt": 21.420000076293945
+       }
+      ]
+     },
+     {
+      "slideId": 3,
+      "src": "assets/audio/ar/slide-3.mp3",
+      "mime": "audio/mpeg",
+      "duration": 48.96,
+      "narration": "هذا هو جدول الـ pros والـ cons من الكتاب عن السفر إلى الخارج في الإجازة. في جانب الـ pros، يعطي الكتاب سبباً واحداً مؤيداً: I can discover new ways to do things، أي يمكنني اكتشاف طرق جديدة لفعل الأشياء. هذه فائدة من فوائد السفر. وفي جانب الـ cons، هناك سبب واحد معارض: It takes too long، أي يستغرق وقتاً طويلاً جداً. هذه سلبية. لاحظوا كيف يضع الجدول الجانبين بجوار بعضهما حتى تقارنوا بينهما بنظرة واحدة. عندما تصنعون جدولكم الخاص، حاولوا إضافة أسباب أكثر في كل جانب قبل أن تقرروا.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "body_1",
+        "showAt": 7.440000057220459
+       },
+       {
+        "elementId": "body_2",
+        "showAt": 22.639999389648438
+       }
+      ],
+      "annotationTimings": [
+       {
+        "type": "highlight",
+        "elementId": "body_1",
+        "targetText": "I can discover new ways to do things.",
+        "color": "green",
+        "showAt": 11.800000381469726,
+        "hideAt": 22.639999389648438
+       },
+       {
+        "type": "highlight",
+        "elementId": "body_2",
+        "targetText": "It takes too long.",
+        "color": "red",
+        "showAt": 26.04000015258789,
+        "hideAt": 33.31999969482422
+       }
+      ]
+     },
+     {
+      "slideId": 4,
+      "src": "assets/audio/ar/slide-4.mp3",
+      "mime": "audio/mpeg",
+      "duration": 31.512,
+      "narration": "لنراجع ما درسناه. تذكروا اسم الاستراتيجية التي رأيناها اليوم؛ فيمَ تساعدكم؟ أي جانب يمثل الأسباب المؤيدة، وأي جانب يمثل الأسباب المعارضة؟ ولماذا يُعد الجدول طريقة مفيدة لكتابتها؟ وما الموضوع الذي استخدمه الكتاب كمثال؟ ممتاز، أنتم الآن مستعدون لاختبار فهمكم.",
+      "elementTimings": [
+       {
+        "elementId": "heading",
+        "showAt": 0
+       },
+       {
+        "elementId": "bullet_1",
+        "showAt": 3.4000000953674316
+       },
+       {
+        "elementId": "bullet_2",
+        "showAt": 10.220000267028809
+       },
+       {
+        "elementId": "bullet_3",
+        "showAt": 17.780000686645508
+       },
+       {
+        "elementId": "bullet_4",
+        "showAt": 23.440000534057617
+       }
+      ],
+      "annotationTimings": []
+     }
+    ]
+   },
+   "exercisesRef": "exercises#ex",
+   "sessionRef": "session#s",
+   "lessonSlideCount": 4
+  }
+ ]
+}

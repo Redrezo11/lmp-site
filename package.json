@@ -1,0 +1,43 @@
+{
+  "name": "lmp-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A static player for Learning Module Packages (.lmp) on GitHub Pages",
+  "scripts": {
+    "dev": "vite --port=4000",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port=4000",
+    "test": "vitest run",
+    "e2e": "vite build && playwright test",
+    "validate": "tsx tools/validate.ts",
+    "catalog": "tsx tools/catalog.ts"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "fflate": "^0.8.2",
+    "lucide-react": "^0.546.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^22.14.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.19.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

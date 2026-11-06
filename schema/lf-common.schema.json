@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lessonforge.app/specs/lmp/lf-1/lf-common.schema.json",
+  "title": "Shared shapes of the LessonForge profile lf/1",
+  "$defs": {
+    "src": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A package path (assets/…), or an absolute https URL only when the asset could not be bundled (then srcUrl holds the same URL)."
+    },
+    "captionLine": {
+      "type": "object",
+      "required": ["start", "end", "text"],
+      "properties": {
+        "start": { "type": "number", "minimum": 0 },
+        "end": { "type": "number", "minimum": 0 },
+        "text": { "type": "string" }
+      }
+    },
+    "elementTiming": {
+      "type": "object",
+      "required": ["elementId", "showAt"],
+      "properties": { "elementId": { "type": "string" }, "showAt": { "type": "number", "minimum": 0 } }
+    },
+    "annotationTiming": {
+      "type": "object",
+      "required": ["type", "elementId", "showAt", "hideAt"],
+      "properties": {
+        "type": { "type": "string", "enum": ["highlight", "underline", "color", "strike", "label"] },
+        "elementId": { "type": "string" },
+        "targetText": { "type": "string" },
+        "color": { "type": "string", "enum": ["yellow", "green", "blue", "red"] },
+        "labelText": { "type": "string" },
+        "showAt": { "type": "number", "minimum": 0 },
+        "hideAt": { "type": "number", "minimum": 0 }
+      }
+    },
+    "clipBody": {
+      "type": "object",
+      "required": ["src", "mime", "duration", "narration"],
+      "properties": {
+        "src": { "$ref": "#/$defs/src" },
+        "srcUrl": { "type": "string", "format": "uri" },
+        "mime": { "type": "string", "enum": ["audio/mpeg", "audio/wav"] },
+        "duration": { "type": "number", "exclusiveMinimum": 0 },
+        "narration": { "type": "string" },
+        "elementTimings": { "type": "array", "items": { "$ref": "#/$defs/elementTiming" } },
+        "annotationTimings": { "type": "array", "items": { "$ref": "#/$defs/annotationTiming" } },
+        "captions": { "type": "array", "items": { "$ref": "#/$defs/captionLine" } },
+        "timingSource": { "type": "string", "enum": ["whisper", "scribe", "position"] }
+      }
+    },
+    "slideClip": {
+      "allOf": [
+        { "$ref": "#/$defs/clipBody" },
+        { "type": "object", "required": ["slideId", "elementTimings", "annotationTimings"], "properties": { "slideId": { "type": "integer", "minimum": 1 } } }
+      ]
+    },
+    "tracks": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "array", "items": { "$ref": "#/$defs/slideClip" } },
+        "ar": { "type": "array", "items": { "$ref": "#/$defs/slideClip" } }
+      }
+    },
+    "slideElement": {
+      "type": "object",
+      "required": ["id", "content", "type"],
+      "properties": {
+        "id": { "type": "string" },
+        "content": { "type": "string" },
+        "type": { "type": "string", "enum": ["heading", "body", "example", "rule", "term", "definition", "bullet", "instruction", "exercise_demo"] },
+        "revealGroup": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "renderConfig": {
+      "type": "object",
+      "required": ["theme", "headingFont", "bodyFont", "bulletCharacter", "slideTypography"],
+      "properties": {
+        "theme": {
+          "type": "object",
+          "required": ["titleBg", "contentBg", "titleFontColor", "headingFontColor", "bodyFontColor", "accentColor"],
+          "additionalProperties": { "type": "string", "pattern": "^[0-9A-Fa-f]{6}$" }
+        },
+        "headingFont": { "type": "string" },
+        "bodyFont": { "type": "string" },
+        "bulletCharacter": { "type": "string", "pattern": "^[0-9A-Fa-f]{4,6}$" },
+        "isHeadingItalic": { "type": "boolean" },
+        "vocabTermStyle": { "type": "string" },
+        "lineSpacing": { "type": "number" },
+        "slideTypography": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["headingSize", "bodySize", "textAlign"],
+            "properties": {
+              "headingSize": { "type": "number" },
+              "bodySize": { "type": "number" },
+              "textAlign": { "type": "string", "enum": ["left", "center", "right"] }
+            }
+          }
+        }
+      }
+    },
+    "blockRef": { "type": "string", "pattern": "^[A-Za-z0-9_-]+#[A-Za-z0-9_-]+$" }
+  }
+}

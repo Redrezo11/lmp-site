@@ -1,0 +1,11 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env
+.env.*
+*.log
+.DS_Store
+
+# The specification sheets stay on this computer (teacher's ruling): never committed
+docs/specs/
